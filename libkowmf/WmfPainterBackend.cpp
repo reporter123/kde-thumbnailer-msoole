@@ -750,10 +750,14 @@ void WmfPainterBackend::updateFromDeviceContext(WmfDeviceContext &context)
         QPen p = context.pen;
         int width = p.width();
 
+#if 0
+	//Tired of esoteric compiler error this triggers. We don't use this library for printer output anyway.
         if (dynamic_cast<QPrinter *>(mTarget)) {
             width = 0;
         }
-        else  if (width == 1)
+        else
+#endif
+	  if (width == 1)
             // I'm unsure of this, but it seems that WMF uses line
             // width == 1 as cosmetic pen.  Or it could just be that
             // any line width < 1 should be drawn as width == 1.  The
