@@ -33,6 +33,7 @@ set(libkowmf_SRCS
     libkowmf/WmfPainterBackend.cpp
     libkowmf/WmfParser.cpp
     libkowmf/WmfStack.cpp
+    libkowmf/libkowmflogging.cpp
 )
 
 set(msoolethumbnail_SRCS msoolecreator.cpp ${libkowmf_SRCS})

@@ -24,7 +24,7 @@
 #include <QtPrintSupport/QPrinter>
 #include <QFontMetrics>
 
-#include "libwmflogging.h"
+#include "kowmflogging.h"
 
 #include "WmfEnums.h"
 #include "WmfParser.h"

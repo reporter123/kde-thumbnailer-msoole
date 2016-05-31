@@ -22,7 +22,7 @@
 
 #include <QtGlobal>
 
-#include "libwmflogging.h"
+#include "kowmflogging.h"
 /**
    Namespace for Windows Metafile (WMF) classes
 */

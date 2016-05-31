@@ -21,7 +21,7 @@
 #include "WmfAbstractBackend.h"
 #include "WmfParser.h"
 
-#include "libwmflogging.h"
+#include "kowmflogging.h"
 
 #include <QFile>
 #include <QString>

@@ -24,7 +24,7 @@
 #include "WmfParser.h"
 #include "WmfAbstractBackend.h"
 
-#include "libwmflogging.h"
+#include "kowmflogging.h"
 
 #include <QImage>
 #include <QMatrix>

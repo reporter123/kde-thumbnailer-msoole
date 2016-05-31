@@ -18,7 +18,7 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#include "libwmflogging.h"
+#include "kowmflogging.h"
 #include "WmfStack.h"
 #include "WmfAbstractBackend.h"
 #include "WmfDeviceContext.h"
