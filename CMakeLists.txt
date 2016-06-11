@@ -7,8 +7,6 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${CMAKE_SOURCE_DI
 
 find_package(GObject REQUIRED)
 find_package(GLIB2 REQUIRED)
-
-#this is the only one we actually need. LibGSF requires the rest
 find_package(LIBGSF REQUIRED)
 
 include(KDEInstallDirs)
@@ -18,8 +16,6 @@ include(KDECompilerSettings)
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS PrintSupport Gui)
 find_package(KF5 REQUIRED COMPONENTS KIO Archive)
 add_definitions(${QT_DEFINITIONS} -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
-
-#include_directories(${QT_INCLUDES} ${KDE4_INCLUDES})
 
 set(libkowmf_SRCS
     libkowmf/WmfAbstractBackend.cpp
