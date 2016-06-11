@@ -50,3 +50,5 @@ include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(GLIB2  DEFAULT_MSG  GLIB2_LIBRARIES GLIB2_MAIN_INCLUDE_DIR)
 
 mark_as_advanced(GLIB2_INCLUDE_DIR GLIB2_LIBRARIES)
+
+include_directories(${GLIB2_INCLUDE_DIR})

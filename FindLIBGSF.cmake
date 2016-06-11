@@ -16,6 +16,7 @@
 # Redistribution and use is allowed according to the terms of the BSD license.
 # For details see the accompanying COPYING-CMAKE-SCRIPTS file.
 
+find_package(LibXml2 REQUIRED)
 
 IF (LIBGSF_INCLUDE_DIR AND LIBGSF_LIBRARIES)
    # in cache already
@@ -55,3 +56,5 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(LIBGSF DEFAULT_MSG LIBGSF_LIBRARIES LIBGSF_INC
 
 MARK_AS_ADVANCED(LIBGSF_INCLUDE_DIR LIBGSF_LIBRARIES LIBGSF_GSF_EXECUTABLE LIBGSF_GSFOFFICETHUMBNAILER_EXECUTABLE LIBGSF_GSFVBADUMP_EXECUTABLE )
 
+#FindLibXml2 is beyond my control so it won't auto add its include directories.
+include_directories(${LIBXML2_INCLUDE_DIR} ${LIBGSF_INCLUDE_DIR})
