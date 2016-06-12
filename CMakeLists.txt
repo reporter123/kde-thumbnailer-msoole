@@ -15,7 +15,10 @@ include(KDECompilerSettings)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS PrintSupport Gui)
 find_package(KF5 REQUIRED COMPONENTS KIO Archive)
-add_definitions(${QT_DEFINITIONS} -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
+
+add_definitions(${QT_DEFINITIONS} ${KF5_DEFINITIONS} -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
+
+include_directories(${QT_INCLUDES} ${KF5_INCLUDES})
 
 set(libkowmf_SRCS
     libkowmf/WmfAbstractBackend.cpp
